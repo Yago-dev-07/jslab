@@ -73,3 +73,29 @@ function somar(a, b) {
 total = somar(4,3);
 console.log(total);
 
+function calcularValorfinal (preco, quantidade, percentualDesconto) {
+    const subtotal = preco * quantidade;
+
+    const desconto = subtotal * percentualDesconto / 100;
+
+    const total = subtotal - desconto;
+
+    return total;
+}
+
+const resultado = calcularValorfinal(80, 3, 10);
+
+console.log(resultado);
+
+function calcularMedia(nota1, nota2, nota3) {
+    const total =
+        nota1 + nota2 + nota3;
+
+    const media =
+        total / 3;
+
+    return media;
+}
+
+console.log(calcularMedia(70, 80, 90));
+
