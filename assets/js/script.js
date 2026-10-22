@@ -1,31 +1,75 @@
+function exibirSaudacao() {
+    console.log("Olá!");
+}
+
+exibirSaudacao();
+
+function exibirNome(nome) {
+    console.log(`Olá, ${nome}!`);
+}
+
+exibirNome("Marina");
+exibirNome("Carlos");
+exibirNome("João");
+
+function calcularTotal(preco, quantidade) {
+    return preco * quantidade;
+
+}
+
+const totalPedido = calcularTotal(50, 3);
+
+console.log(totalPedido);
+
+// Exercício — Desconto
+
 /*
-for (let i = 1; i <= 20; i++) {
-    if (i % 2 === 0) {
-        console.log(i);
+function calcularDesconto (valor, percentual) {
+    return valor * (percentual/100);
+}
+
+let valor = 150;
+const desconto = calcularDesconto(100, 25);
+
+const total = valor - desconto;
+
+console.log(total);
+*/
+
+function calcularSubtotal(preco, quantidade) {
+    return preco * quantidade;
+}
+
+function calcularDesconto(valor, percentual) {
+    return valor * percentual / 100;
+}
+
+const subtotal = calcularSubtotal(100, 3);
+const desconto = calcularDesconto(subtotal, 10);
+let total = subtotal - desconto;
+
+console.log(total);
+
+// Exercício — Situação acadêmica
+
+function verificarSituacao(nota, frequencia) {
+    if (nota >= 60 && frequencia >= 75) {
+        console.log("Aluno aprovado");
+    } else {
+        console.log("Aluno reprovado");
     }
 }
 
-let contador = 1;
+const desempenhoAluno = verificarSituacao(70, 78);
 
-while (contador <= 5) {
-    console.log(contador);
+console.log(desempenhoAluno);
 
-    contador++;
-}
-*/
 
-// Exercício — Processamento de pedidos
 
-const quantidadePedidos = 8;
-
-for (let i = 1; i<=quantidadePedidos; i++) {
-    console.log(`Processando pedido ${i}`)
+function somar(a, b) {
+    return a + b;
 }
 
-// Exercício — Contagem regressiva
+total = somar(4,3);
+console.log(total);
 
-for(let j = 10; j>=1; j = j - 1) {
-    console.log(j)
-}
-
-console.log("Fim")
