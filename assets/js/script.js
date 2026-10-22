@@ -95,6 +95,8 @@ console.log(possuiAcesso);
 
 */
 
+
+
 // Exercício — Compra 
 
 const nomeProduto = "Laranja";
@@ -118,3 +120,66 @@ console.log(typeof nomeProduto);
 console.log(typeof desconto);
 console.log(typeof valorFinal)
 
+console.log("-------------------------")
+
+/*
+
+let nota = 82;
+
+if (nota >= 90) {
+    console.log("Excelente");
+} else if (nota >= 75) {
+    console.log("Muito bom");
+} else if (nota >= 60) {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
+
+
+nota = 70;
+const frequencia = 80;
+
+if (nota >= 60 && frequencia >= 75) {
+    console.log("Aluno aprovado");
+} else {
+    console.log("Aluno não aprovado");
+}
+
+*/
+
+// Exercício — Pedido Prioritário
+
+const prioridade = "alta";
+const atrasado = true;
+
+if (prioridade === "alta" && atrasado === true) {
+    console.log("ATENÇÃO IMEDIATA");
+} else {
+    console.log("Acompanhamento normal");
+}
+
+console.log("-------------------------")
+
+// Exercício — Situação de acesso
+
+const idade = 24;
+possuiCadastro = true;
+bloqueado = true;
+
+if (idade >= 18 && possuiCadastro === true && bloqueado === false) {
+    console.log("Acesso permitido");
+} else if (idade < 18 || possuiCadastro === false && bloqueado === false) {
+    console.log("Acesso Negado");
+    bloqueado = true;
+} else if (bloqueado === true) {
+    console.log("Acesso bloqueado")
+} else {
+    console.log("Entrada Inválida")
+}
+
+console.log("-------------------------")
+
+console.log("Informação");
+console.warn("Atenção");
+console.error("Erro");
